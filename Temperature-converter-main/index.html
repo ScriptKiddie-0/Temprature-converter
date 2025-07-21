@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Temperatura</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <p>Enter the temperature, select units and see the result instantly</p>
+
+        <div class="converter">
+            <input type="number" id="temperatureInput" placeholder="0.00" step="0.01" min="0" max="99.99" oninput="limitLength(this)">       
+            
+            
+            <select id="fromUnit">
+                <option value="" disabled selected>From Unit</option>
+                <option value="Celsius">Celsius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Kelvin">Kelvin</option>
+            </select>
+            
+            <select id="toUnit">
+                <option value="" disabled selected>To Unit</option>
+                <option value="Celsius">Celsius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Kelvin">Kelvin</option>
+            </select>
+        </div>
+
+        <p id="resultMessage"></p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

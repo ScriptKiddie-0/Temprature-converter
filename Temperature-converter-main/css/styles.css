@@ -1,0 +1,98 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 500;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.converter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select, button {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+input:focus, select:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 5px rgba(26, 115, 232, 0.3);
+}
+
+select {
+    appearance: none;
+    background: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjY2NjIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDEwIDEwIj4gPHBhdGggZD0iTTAgMmgxMGwtNSA1em0wNiA2aDJMNCAyTDAgOCIgLz48L3N2Zz4=') no-repeat right 12px center;
+    background-size: 12px;
+}
+
+button {
+    background-color: #1a73e8;
+    color: white;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button:not(:disabled):hover {
+    background-color: #005cbf;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:not(:disabled):focus {
+    box-shadow: 0 0 5px rgba(26, 115, 232, 0.5);
+}
+
+#resultMessage {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+}
+
